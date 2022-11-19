@@ -9,10 +9,10 @@ class Pipeline {
     Pipeline(def jScript) {
         this.jScript = jScript
         this.logger = new Logger(jScript)
+        Logger.setLevel("INFO")
     }
 
     def execute() {
-        Logger.setLevel("INFO")
         jScript.stage("Build"){
             logger.info("Stage Execution")
         }
