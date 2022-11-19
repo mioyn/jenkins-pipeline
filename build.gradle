@@ -28,11 +28,10 @@ dependencies {
 }
 
 sharedLibrary {
-    coreVersion = "2.3463"
+    coreVersion = "2.346.3"
     testHarnessVersion = "2.32"
     pluginDependencies {
         dependency("io.jenkins.blueocean", "blueocean-web", "1.2.4")
-        dependency("org.jenkins-ci.plgins", "git", "3.9.3")
     }
 }
 
